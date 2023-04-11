@@ -1,7 +1,7 @@
 import Card from "../module/Card";
 import styles from "./CarsPage.module.css";
 
-function CarsPage({ data }) {
+const CarsPage = ({ data }) => {
   return (
     <div className={styles.container}>
       {data?.map((car) => (
@@ -10,6 +10,6 @@ function CarsPage({ data }) {
       ))}
     </div>
   );
-}
+};
 
 export default CarsPage;

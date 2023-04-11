@@ -5,7 +5,8 @@ import Hatchback from "../icons/Hatchback";
 import Sport from "../icons/Sport";
 
 import styles from "./Categories.module.css";
-function Categories() {
+
+const Categories = () => {
   return (
     <div className={styles.container}>
       <Link href="/categories/sedan">
@@ -34,6 +35,6 @@ function Categories() {
       </Link>
     </div>
   );
-}
+};
 
 export default Categories;

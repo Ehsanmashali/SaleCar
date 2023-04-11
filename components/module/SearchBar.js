@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./SearchBar.module.css";
 
-function SearchBar() {
+const SearchBar = () => {
   const router = useRouter();
 
   const [min, setMin] = useState("");
@@ -33,6 +33,6 @@ function SearchBar() {
       <button onClick={searchHandler}>Search</button>
     </div>
   );
-}
+};
 
 export default SearchBar;

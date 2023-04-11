@@ -4,7 +4,7 @@ import Card from "../module/Card";
 
 import styles from "./CarsList.module.css";
 
-function CarsList({ data }) {
+const CarsList = ({ data }) => {
   const router = useRouter();
 
   const backHandler = () => {
@@ -24,6 +24,6 @@ function CarsList({ data }) {
       </div>
     </div>
   );
-}
+};
 
 export default CarsList;
